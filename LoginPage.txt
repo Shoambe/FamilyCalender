@@ -1,0 +1,42 @@
+login.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Firebase SDK "compat" version for Firebase functionalities -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <form id="login-form">
+            <h2>Login</h2>
+            
+            <label for="login-email">Email Address</label>
+            <input type="email" id="login-email" name="email" required>
+            
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="login.js"></script> <!-- Ensure this is the correct path to your JavaScript file -->
+</body>
+</html>
+
+login.js:
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure Firebase is initialized
+    const firebaseConfig = {
+        apiKey: "AIzaSyBtvK4KVhSYxV8WblKsGMq3lhZTYJCHehc",
+        authDomain: "calendar-25be1.firebaseapp.com",
+        projectId: "calendar-25be1",
+        storageBucket: "calendar-25be1.appspot.com",
+        messagingSenderId: "513756451001",
+        appId: "1:513756451001:web:bc0c1e0ec3ab3916178b68",
+        measurementId: "G-5WPP1P602P"
+    };
